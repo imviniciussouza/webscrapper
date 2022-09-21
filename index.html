@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&family=Oswald:wght@200;300;400;500;600&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<style>
+
+
+</style>
+<body>
+    <div class="container">
+        
+    </div>
+
+</body>
+<script>
+    (async() => {
+    const response = await fetch('./arreglo.json')
+    const data = await response.json();
+
+    document.querySelector(".container").innerHTML = data
+    })();
+</script>
+</html>
